@@ -1,6 +1,82 @@
-.frontpage {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav .nav--logo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 15px;
+}
+
+.nav .nav--Links {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 70px;
+}
+
+.nav .nav--Links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav .nav--Links a:hover {
+  opacity: 0.5;
+}
+
+.Top--Image {
+  position: relative;
+  text-align: left;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: White;
+  font-size: 25px;
+}
+
+.TopSection {
+  height: 600px;
+  background-color: #F4F4F4;
+}
+
+.MiddleSection {
+  height: 600px;
+  background-color: white;
+}
+
+.BottomSection {
+  height: 600px;
+  background-color: #F4F4F4;
+}
+
+.footer {
+  height: 150px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
