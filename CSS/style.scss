@@ -34,6 +34,9 @@ html, body {
 }
 
 //Frontpage Image
+.container {
+    background-color: #F4F4F4;
+}
 .Top--Image {
     position: relative;
     text-align: left;
@@ -48,11 +51,40 @@ html, body {
 }
 
 
-
-.TopSection{
+//Frontpage products
+.NewProducts{
     height: 600px;
     background-color: #F4F4F4;
+    display: grid;
+    grid-auto-flow: row;
+    h1 {
+        text-align: center;
+    }
+
+    .product--card--1 {
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        h1 {
+            font-size: 23px;
+        }
+        button {
+            border: 2px solid black;
+            outline: 0;
+            padding: 12px;
+            color: Black;
+            background-color: white;
+            text-align: center;
+            cursor: pointer;
+            width: 70%;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+    }
 }
+
+//Placeholder names for the last sections of the frontpage for now
 .MiddleSection{
     height: 600px;
     background-color: white;
