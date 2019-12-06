@@ -76,18 +76,18 @@ html, body {
   text-align: center;
 }
 
-.NewProducts .product--card--1 {
+.NewProducts .product--card {
   max-width: 300px;
   margin: auto;
   text-align: center;
   font-family: arial;
 }
 
-.NewProducts .product--card--1 h1 {
+.NewProducts .product--card h1 {
   font-size: 23px;
 }
 
-.NewProducts .product--card--1 button {
+.NewProducts .product--card button {
   border: 2px solid black;
   outline: 0;
   padding: 12px;
