@@ -151,6 +151,10 @@ html, body {
   height: 50px;
 }
 
+.Product .Product--content .product--content--details .desc {
+  padding-right: 500px;
+}
+
 .Product .Product--content .product--content--details input {
   width: 50px;
   height: 45px;
