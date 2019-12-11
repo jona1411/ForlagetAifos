@@ -2,11 +2,6 @@
 @import 'partial';
 
 
-//General Button style
-
-main {
-    background-color: #F4F4F4;
-}
 //The top menu
 .nav {
     display: grid;
@@ -40,8 +35,9 @@ main {
 }
 
 //Frontpage Image
-.container {
+.MainImage {
     background-color: #F4F4F4;
+    width: 100%;
 }
 .Top--Image {
     position: relative;
@@ -144,13 +140,28 @@ input[type=text], select, textarea {
 
 
 //Placeholder names for the last sections of the frontpage for now
-.MiddleSection{
-    height: 600px;
-    background-color: white;
-}
-.BottomSection{
+
+.Frontpage--Gallery{
     height: 600px;
     background-color: #F4F4F4;
+}
+
+
+.About-wrapper {
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 50px 20px;
+    text-align: center;
+    h1 {
+        color: black;
+    }
+    p {
+       margin-left: 30%;
+       margin-right: 30%;
+        text-align: center;
+    }
 }
 
 .Product {
