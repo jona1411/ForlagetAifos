@@ -1,9 +1,11 @@
 @import 'variables';
+@import 'partial';
 
-html, body {
-    margin:0;
-    padding:0;
-    font-family: $PrimaryFont;
+
+//General Button style
+
+main {
+    background-color: #F4F4F4;
 }
 //The top menu
 .nav {
@@ -13,6 +15,7 @@ html, body {
     grid-gap: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: white;
 
     .nav--logo {
         display: grid;
@@ -43,6 +46,7 @@ html, body {
 .Top--Image {
     position: relative;
     text-align: left;
+    background-color: #F4F4F4;
 }
 .centered {
     position: absolute;
@@ -55,18 +59,30 @@ html, body {
 
 
 //Frontpage products
+.wrapper {
+    background-color: #F4F4F4;
+    text-align: center;
+}
 .NewProducts{
     height: 600px;
     background-color: #F4F4F4;
     display: grid;
-    grid-auto-flow: row;
+    padding-right: 20%;
+    padding-left:20% ;
     h1 {
         text-align: center;
+        grid-column: 2;
+        
     }
 
     .product--card {
+        
         max-width: 300px;
+        grid-row-start: 6;
+        grid-row-end: 12;
         margin: auto;
+        padding-bottom: 15%;
+
         text-align: center;
         font-family: arial;
         h1 {
@@ -83,6 +99,11 @@ html, body {
             width: 70%;
             font-size: 18px;
             border-radius: 30px;
+           
+                &:hover {
+                    opacity: 0.5;
+                }
+            
         }
     }
 }
@@ -111,16 +132,11 @@ html, body {
             }
             margin: 50px;
             button {
-                background-color: white;
-                background-color: #4CAF50; /* Green */
-                border: none;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
+                margin-left: 10px;
                 width: 150px;
                 height: 50px;
+                
+                
             }
             .desc {
                 padding-right: 500px;
