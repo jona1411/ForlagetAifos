@@ -3,6 +3,10 @@ html, body {
     padding:0;
     font-family: $PrimaryFont;
 }
+img {
+    max-width: 100%;
+    
+}
 
 main {
     background-color: #F4F4F4;

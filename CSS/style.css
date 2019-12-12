@@ -4,6 +4,10 @@ html, body {
   font-family: "Roboto", sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 main {
   background-color: #F4F4F4;
 }
@@ -175,11 +179,6 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-.Frontpage--Gallery {
-  height: 600px;
-  background-color: #F4F4F4;
-}
-
 .About-wrapper {
   height: 200px;
   background-color: white;
@@ -256,5 +255,83 @@ input[type=submit]:hover {
 .footer {
   height: 150px;
   background-color: white;
+}
+
+.Gallery--wrapper {
+  text-align: center;
+}
+
+.Gallery--wrapper .Frontpage--Gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (5vw)[8];
+      grid-template-rows: repeat(8, 5vw);
+  grid-gap: 10px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  background-color: #F4F4F4;
+}
+
+.Gallery--wrapper .Frontpage--Gallery .gallery--image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Gallery--wrapper .Frontpage--Gallery .gallery--item--1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Gallery--wrapper .Frontpage--Gallery .gallery--item--2 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.Gallery--wrapper .Frontpage--Gallery .gallery--item--3 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.Gallery--wrapper .Frontpage--Gallery .gallery--item--4 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.Gallery--wrapper .Frontpage--Gallery .gallery--item--5 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.Gallery--wrapper .Frontpage--Gallery .gallery--item--6 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
 }
 /*# sourceMappingURL=style.css.map */
