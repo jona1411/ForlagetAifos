@@ -68,6 +68,11 @@ button:hover {
   opacity: 0.5;
 }
 
+.nav .nav--Links a i {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
 .MainImage {
   background-color: #F4F4F4;
   width: 100%;
@@ -120,7 +125,7 @@ button:hover {
   font-family: arial;
 }
 
-.NewProducts .product--card h1 {
+.NewProducts .product--card h2 {
   font-size: 23px;
 }
 
@@ -181,7 +186,7 @@ input[type=submit]:hover {
 }
 
 .About-wrapper {
-  height: 200px;
+  height: auto;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,8 +258,74 @@ input[type=submit]:hover {
   padding-right: 50px;
 }
 
-.footer {
-  height: 150px;
-  background-color: white;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  background-color: #4d4d4d;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-right: 10%;
+  width: 100%;
+  color: white;
+}
+
+footer .footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12;
+      grid-template-columns: 12;
+  -ms-grid-rows: 1;
+      grid-template-rows: 1;
+  width: 100%;
+}
+
+footer .footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer .contact {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+footer .footer .contact h4 {
+  font-weight: normal;
+}
+
+footer .footer .contact p:hover {
+  opacity: 0.5;
+}
+
+footer .footer .contact i {
+  padding-right: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+footer .footer .Information {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+footer .footer .links {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+footer .footer .links p:hover {
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
