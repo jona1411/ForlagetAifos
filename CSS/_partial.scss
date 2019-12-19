@@ -3,14 +3,17 @@ html, body {
     padding:0;
     font-family: $PrimaryFont;
 }
+
 img {
     max-width: 100%;
     
 }
 
 main {
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
+    width:100%;
 }
+
 
 //General button styling
 button {

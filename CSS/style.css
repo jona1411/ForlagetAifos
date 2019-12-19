@@ -9,7 +9,8 @@ img {
 }
 
 main {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
+  width: 100%;
 }
 
 button {
@@ -257,6 +258,67 @@ input[type=submit]:hover {
   padding-right: 50px;
 }
 
+
+.products {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.products .products--title h1, .products .products--title h4 {
+  text-align: left;
+  padding-left: 6%;
+}
+
+.products hr {
+  color: black;
+  width: 95%;
+  margin-bottom: 3%;
+}
+
+.products .products--overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products .products--overview .product--card {
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  padding: 4%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 16%;
+      flex-basis: 16%;
+}
+
+.products .products--overview .product--card img {
+  max-width: 100%;
+}
+
+.products .products--overview .product--card h1 {
+  font-size: 23px;
+}
+
+.products .products--overview .product--card button {
+  border: 2px solid black;
+  outline: 0;
+  padding: 12px;
+  color: Black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.products .products--overview .product--card button:hover {
+  opacity: 0.5;
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,5 +466,6 @@ footer .footer .links p:hover {
   -ms-grid-row: 6;
       grid-row-start: 6;
   grid-row-end: 9;
+
 }
 /*# sourceMappingURL=style.css.map */
