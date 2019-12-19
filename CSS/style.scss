@@ -278,9 +278,6 @@ color: white;
     padding-left: 15px;
     padding-bottom: 20px;
     background-color: #F4F4F4;
-    img {
-        
-    }
     .gallery--image {
         width: 100%;
         height: 100%;
@@ -383,4 +380,28 @@ color: white;
 }
 //end
 
+//About page start
+.About {
+    height: auto;
+    .About--content {
+    display: flex;
+    flex-direction: row;
+        .About--content--image {
+            margin: 50px;
+            height: auto;
+            
+            img {
+                width:500px; 
+                height:600px;
+                max-width: 500px;
+            
+            } 
+        }
+        .About--content--details {
+           padding-right: 15%;
+           padding-top: 20px;
+        
+        }
+    }
+}
 
