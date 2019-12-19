@@ -1,3 +1,4 @@
+
 html, body {
   margin: 0;
   padding: 0;
@@ -146,6 +147,10 @@ button:hover {
   border-radius: 30px;
 }
 
+
+.products .products--overview .product--card button:hover {
+  opacity: 0.5;
+=======
 .NewProducts .product--card button:hover {
   opacity: 0.5;
 }
@@ -404,5 +409,6 @@ footer .footer .links p:hover {
   -ms-grid-row: 6;
       grid-row-start: 6;
   grid-row-end: 9;
+
 }
 /*# sourceMappingURL=style.css.map */
