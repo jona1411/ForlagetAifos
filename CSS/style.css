@@ -466,4 +466,34 @@ footer .footer .links p:hover {
 .products .products--overview .product--card button:hover {
   opacity: 0.5;
 }
+
+.About {
+  height: auto;
+}
+
+.About .About--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.About .About--content .About--content--image {
+  margin: 50px;
+  height: auto;
+}
+
+.About .About--content .About--content--image img {
+  width: 500px;
+  height: 600px;
+  max-width: 500px;
+}
+
+.About .About--content .About--content--details {
+  padding-right: 15%;
+  padding-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
