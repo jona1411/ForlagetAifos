@@ -226,6 +226,10 @@ input[type=submit]:hover {
   margin: 50px;
 }
 
+.Product .Product--content .Product--Content--Image img {
+  max-width: none;
+}
+
 .Product .Product--content .product--content--details {
   margin: 50px;
 }

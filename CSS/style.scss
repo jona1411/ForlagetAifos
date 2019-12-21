@@ -171,6 +171,9 @@ input[type=text], select, textarea {
         flex-direction: row;
         .Product--Content--Image {
             margin: 50px;
+            img {
+                max-width: none;
+            }
         }
         .product--content--details {
             h1 {
