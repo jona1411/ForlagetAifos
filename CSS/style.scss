@@ -1,7 +1,6 @@
 
 @import 'variables';
 @import 'partial';
-@import 'responsive';
 
 //The top menu
 .nav {
@@ -40,6 +39,56 @@
             }
         }
     }
+    //Cut this into Umbraco css
+    .nav--Mobile {
+        
+        @media only screen and (min-width: 930px) {
+            display: none;
+        }
+
+        .nav--Mobile--topnav {
+            overflow: hidden;
+            position: relative;
+           
+            a {
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: flex;
+
+                i.fa.fa-bars {
+                    padding-top: 15px;
+                    font-size: 30px;
+                }
+              
+                
+                
+                
+                a.icon {
+                    background: black;
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                &:hover {
+                    opacity: 0.5;
+                    color: black;
+                }
+
+            }
+            .active {
+                background-color: #4CAF50;
+                color: Black;
+            }
+
+            div#myLinks {
+                display: none;
+            }
+        }
+    }
+    //Till here
     
 }
 
@@ -162,7 +211,6 @@ input[type=text], select, textarea {
   }
 
 
-//Placeholder names for the last sections of the frontpage for now
 
 
 .About-wrapper {
