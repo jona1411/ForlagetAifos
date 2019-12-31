@@ -187,7 +187,7 @@ input[type=text], select, textarea {
     resize: vertical 
   }
   
-  /* Style the submit button with a specific background color etc */
+
   input[type=submit] {
     background-color: white;
     color: Black;
@@ -198,12 +198,11 @@ input[type=text], select, textarea {
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+
   input[type=submit]:hover {
     opacity: 0.5;
   }
-  
-  /* Add a background color and some padding around the form */
+
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -349,6 +348,7 @@ color: white;
 //Gallery for the frontpage
 .Gallery--wrapper {
     text-align: center;
+
 .Frontpage--Gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -357,6 +357,7 @@ color: white;
     padding-left: 15px;
     padding-bottom: 20px;
     background-color: #F4F4F4;
+    
     .gallery--image {
         width: 100%;
         height: 100%;
