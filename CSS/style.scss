@@ -16,7 +16,7 @@
         display: grid;
         justify-content:start ;
         align-content: center;
-        font-size: 15px;
+        font-size: 15px; 
     }
     .nav--Links {
         display: grid;
@@ -28,67 +28,37 @@
             display: none;
         }
         a {
+            span.snipcart-items-count {
+                padding-left: 5px;
+            }
+
             text-decoration: none;
             color: black;
             &:hover {
                 opacity: 0.5;
             } 
+
             i {
                 font-size: 20px;
                 padding-left: 15px;
             }
         }
-    }
-    //Cut this into Umbraco css
-    .nav--Mobile {
+        a.snipcart-checkout {
+            cursor: pointer;
+        }
         
-        @media only screen and (min-width: 930px) {
+    }
+
+    div#container {
+        @media only screen and(min-width: 930px) {
             display: none;
         }
-
-        .nav--Mobile--topnav {
-            overflow: hidden;
-            position: relative;
-           
-            a {
-                color: black;
-                padding: 8px 16px;
-                text-decoration: none;
-                font-size: 17px;
-                display: flex;
-
-                i.fa.fa-bars {
-                    padding-top: 15px;
-                    font-size: 30px;
-                }
-              
-                
-                
-                
-                a.icon {
-                    background: black;
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-                &:hover {
-                    opacity: 0.5;
-                    color: black;
-                }
-
-            }
-            .active {
-                background-color: #4CAF50;
-                color: Black;
-            }
-
-            div#myLinks {
-                display: none;
-            }
+        .menu-btn {
+            padding: 30px;
+            font-size: 25px;
+            margin-left: 50px;
         }
-    }
-    //Till here
+    } 
     
 }
 
@@ -99,9 +69,9 @@
     height: auto;
     img {
         width: 100%;
-        height: 800px;
+        height: 700px;
         @media only screen and (max-width: 856px) {
-            height: 600px
+            height: 400px
         }
     }
 }
@@ -115,9 +85,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: green;
+    color: white;
     font-size: 25px;
-    filter: brightness(50%);
+    text-align:center;
+    text-shadow: 2px 2px 2px black;
+    @media only screen and (max-width: 768px) {
+        top: 40%;
+        font-size: 14px;
+        width: 100%;
+    }
 }
 
 
@@ -127,57 +103,62 @@
     text-align: center;
 }
 .NewProducts{
-    height: auto;
-    background-color: #F4F4F4;
-    display: grid;
-    padding-right: 20%;
-    padding-left:20% ;
-    padding-bottom: 5%;
     @media only screen and (max-width: 1000px) {
         display: flex;
         flex-direction: column;
+        padding-bottom: 5%;
+        align-items: center;
+        justify-content: center;
 }
-    h1 {
-        text-align: center;
-        grid-column: 2;
-        
-    }
-
+    height: auto;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-wrap: wrap;
+      
     .product--card {
-        
-        max-width: 300px;
-        grid-row-start: 6;
-        grid-row-end: 12;
-        margin: auto;
-        padding-bottom: 15%;
-
-        text-align: center;
-        font-family: arial;
-        h2 {
-            font-size: 23px;
-        }
-        button {
-            border: 2px solid black;
-            outline: 0;
-            padding: 12px;
-            color: Black;
-            background-color: white;
-            text-align: center;
-            cursor: pointer;
-            width: 70%;
-            font-size: 18px;
-            border-radius: 30px;
-           
-                &:hover {
-                    opacity: 0.5;
-                }
-            
-        }
+     max-width: 300px;
+     text-align: center;
+     font-family: arial;
+     padding: 4%;
+     flex-grow: 1;
+     flex-basis: 10%;
+     @media only screen and (max-width: 425px) {
+        max-width: 50%;
     }
+    @media only screen and ( max-width: 994px)   {
+        max-width: 50%;
+    }
+
+     img {
+         max-width: 100%;    
+         height: 300px;
+     }
+
+     
+     h2 {
+         font-size: 23px;
+     }
+     button {
+         border: 2px solid black;
+         outline: 0;
+         padding: 12px;
+         color: Black;
+         background-color: white;
+         text-align: center;
+         cursor: pointer;
+         width: 70%;
+         font-size: 18px;
+         border-radius: 30px;
+        
+             &:hover {
+                 opacity: 0.5;
+             }
+     }
+ }
 }
 
 input[type=text], select, textarea {  
-    width: 100%; 
+    width: 62%; 
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
@@ -186,30 +167,32 @@ input[type=text], select, textarea {
     margin-bottom: 16px; 
     resize: vertical 
   }
-  
 
   input[type=submit] {
     background-color: white;
     color: Black;
     padding: 12px 20px;
     border: 2px solid gray;
-    
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 70px;
+    margin-top: 30px;
   }
   
 
   input[type=submit]:hover {
     opacity: 0.5;
   }
+  
 
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding-left: 20%; 
   }
 
 
+//Placeholder names for the last sections of the frontpage for now
 
 
 .About-wrapper {
@@ -238,10 +221,18 @@ input[type=text], select, textarea {
     .Product--content {
         display: flex;
         flex-direction: row;
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
         .Product--Content--Image {
             margin: 50px;
             img {
-                max-width: none;
+                max-width: 100%;
+                width: auto;
+                height: 500px;
+                @media only screen and (max-width: 1000px) {
+                    height: auto;
+                }
             }
         }
         .product--content--details {
@@ -335,7 +326,15 @@ color: white;
         .links {
             grid-row: 1;
             grid-column: 4;
+            display: flex;
+            flex-direction: column;
             p {
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            .nav-link {
+                padding-bottom: 10px;
                 &:hover {
                     opacity: 0.5;
                 }
@@ -348,7 +347,6 @@ color: white;
 //Gallery for the frontpage
 .Gallery--wrapper {
     text-align: center;
-
 .Frontpage--Gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -357,7 +355,6 @@ color: white;
     padding-left: 15px;
     padding-bottom: 20px;
     background-color: #F4F4F4;
-    
     .gallery--image {
         width: 100%;
         height: 100%;
@@ -422,7 +419,7 @@ color: white;
     .products--overview {
        display: flex;
        flex-wrap: wrap;
-        
+         
        .product--card {
         max-width: 300px;
         text-align: center;
@@ -430,8 +427,14 @@ color: white;
         padding: 4%;
         flex-grow: 1;
         flex-basis: 16%;
+        @media only screen and (max-width: 425px) {
+            padding: 0%;
+            margin: 50px;
+            flex-basis: 100% 
+        }
         img {
             max-width: 100%;
+            height: 400px;
         }
 
         
@@ -473,6 +476,7 @@ color: white;
         .About--content--image {
             margin: 50px;
             height: auto;
+           
             
             img {
                 width:500px; 
@@ -481,11 +485,22 @@ color: white;
                 @media only screen and (max-width: 768px) {
                     max-width: 100%;
                 }
+
+                @media only screen and (max-width: 424px) {
+                    height: 300px;
+                    
+                }
+
+                @media only screen and (min-width: 425px) {
+                    height: 400px;
+                    
+                }
             
             } 
         }
         .About--content--details {
            padding-bottom: 5%;
+           padding-top: 20px;
         }
     }
 }
